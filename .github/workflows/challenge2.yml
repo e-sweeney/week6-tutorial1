@@ -10,7 +10,8 @@ jobs:
         steps:
         - name: step1 checkout
           uses: actions/checkout@v2
-        
+        - name: Create artifact file
+          run: echo "This is my artifact" > artifact.txt 
     job2:
         name: job2
         runs-on: ubuntu-latest
