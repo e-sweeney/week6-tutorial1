@@ -16,7 +16,7 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
         - name: step2 load artefact
-          uses: actions/upload-artifact@v2
+          uses: actions/upload-artifact@v3
           with:
             name: ${{ env.ARTIFACT_NAME }}
             path: .
