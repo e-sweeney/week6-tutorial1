@@ -1,5 +1,5 @@
 name: tutorial1
-on: push
+# on: push
 
 jobs:
     job1:
