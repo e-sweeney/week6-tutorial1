@@ -11,7 +11,7 @@ jobs:
       run: |
         pwd
         ls -l
-        cd ModelCleaning
+        cd ../ModelCleaning
         echo "this is ModelCleaning folder"
         ls -l
 
