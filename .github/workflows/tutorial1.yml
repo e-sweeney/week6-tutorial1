@@ -1,5 +1,5 @@
 name: tutorial1
-on: push
+# on: push
 
 jobs:
     job1:
@@ -14,15 +14,15 @@ jobs:
          steps: 
          - name: step2
            run: echo " hellow from job 2"
+    
     job3:
-         
-         runs-on: macos
-         steps: 
-         - name: step3
-           run: echo " hellow from job 3" 
-    job4:
          runs-on: ubuntu-latest
          steps:
-         - name: step 4
-           #needs: [job1, job2, job3]
-           run: echo "hello from job 4"
+         - name: step 3
+           run: echo "hello from job 3"
+    job4: 
+         needs: [job1, job2]
+         runs-on: ubuntu-latest
+         steps:
+         - name: job 4
+           run: date
