@@ -1,5 +1,5 @@
 name: challange
-on: push
+#on: push
 env:
   ARTIFACT_NAME: myartifact
 jobs:
