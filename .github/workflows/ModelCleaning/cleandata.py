@@ -25,4 +25,8 @@ df.drop_duplicates(inplace=True)
 # Save cleaned data
 df.to_csv('cleaned_data.csv', index=False)
 
+# Show original data
+print("Cleaned Data:")
+print(df.head())
+
 print("\nCleaned data saved to 'cleaned_data.csv'")
