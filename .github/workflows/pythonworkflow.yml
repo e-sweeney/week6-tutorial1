@@ -1,1 +1,17 @@
+name: pythonworkflow
+on: workflow_dispatch
+
+jobs:
+
+  data_pipeline:
+    name: data_pipeline
+    runs-on: ubuntu-latest
+    steps:
+    - name: clean_data
+      uses: actions/checkout@v4
+      run: |
+        pwd
+        ls -l
+
+
 
