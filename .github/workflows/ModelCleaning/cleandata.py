@@ -11,10 +11,10 @@ print(df.head())
 df.columns = df.columns.str.strip()
 
 # Remove leading/trailing whitespace from string values
-df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+df = df.map(lambda x: x.strip() if isinstance(x, str) else x)
 
 # Convert string columns to lowercase
-df = df.applymap(lambda x: x.lower() if isinstance(x, str) else x)
+df = df.map(lambda x: x.lower() if isinstance(x, str) else x)
 
 # Drop rows with any missing values
 df.dropna(inplace=True)
